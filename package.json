@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "main": "index.js",
   "license": "MIT",
+  "description": "A fast minimal package to validate Rwandan National Ids and Phone Numbers(all carriers) using Regular Expressions.",
   "scripts": {
     "lint": "eslint .",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
