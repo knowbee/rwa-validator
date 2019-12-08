@@ -62,3 +62,20 @@ exports.isNationalId = id => {
   }
   return true;
 };
+
+/**
+ * Validate phone number
+ * @param  {string}  number
+ * @return {Boolean}
+ */
+exports.isPhoneNumber = number => {
+  const errors = {
+    format: false
+  };
+
+  const re = /^(\+?25)?(078|075|073|072)\d{7}$/;
+  if (!re.test(number)) {
+    return errors.format;
+  }
+  return true;
+};
