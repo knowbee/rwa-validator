@@ -79,7 +79,7 @@ exports.isPhoneNumber = number => {
     throw new Error("Input should be string");
   }
 
-  const re = /^(\+?25)?(078|075|073|072)\d{7}$/;
+  const re = /^(\+?25)?(078|079|075|073|072)\d{7}$/;
   if (!re.test(number)) {
     return errors.format;
   }
